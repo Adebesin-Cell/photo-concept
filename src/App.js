@@ -52,7 +52,9 @@ function App() {
             </span>
             <span>website</span>
           </h1>
-          <hr className='card__underline' />
+          <div className='card__line'>
+            <hr className='card__underline' />
+          </div>
           <div className='card__info'>
             <div className='card__box'>
               <div className='card__icon'>
@@ -73,6 +75,49 @@ function App() {
               </p>
             </div>
           </div>
+          <div className='card__cta'>
+            <button
+              className='card__button card__button--cta card__button--black'
+              name='Get started'
+            >
+              <span className='text'>Get started</span>
+              <span className='icon'>
+                <svg
+                  width='8'
+                  height='14'
+                  viewBox='0 0 8 14'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M5.17198 7L0.221985 2.05L1.63598 0.636002L7.99998 7L1.63598 13.364L0.221985 11.95L5.17198 7Z'
+                    fill='#ffffff'
+                  />
+                </svg>
+              </span>
+            </button>
+            <button
+              className='card__button card__button--cta card__button--gray'
+              name='Watch Demo'
+            >
+              <span className='text'>Watch Demo</span>
+              <span className='icon'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                >
+                  <polygon points='5 3 19 12 5 21 5 3'></polygon>
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
         <div className='card__details'>
           <div className='card__details-body'>
@@ -90,6 +135,7 @@ function App() {
               </button>
             </div>
           </div>
+          <div className='card__details-footer'>&nbsp;</div>
         </div>
       </section>
     </div>

@@ -50,7 +50,10 @@
         background: var(--details-background);
         border-radius: 5px;
         padding: var(--span-m);
-        padding-top: var(--span-m);
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &-body {
             position: relative;
@@ -139,13 +142,15 @@
         }
     }
 
+    &__line {
+        padding-right: calc(2 * var(--span-xl));
+    }
+
     &__underline {
         margin-top: var(--span-m);
         height: 1px;
         outline: none;
         background: var(--black);
-        max-width: 65%;
-        margin-right: auto;
     }
 
     &__button {
@@ -184,6 +189,41 @@
                 background: var(--black);
             }
         }
+
+        &--cta {
+            padding: calc(var(--span-xs) + 5px) var(--span-s);
+            font-family: var(--Poppins);
+            font-size: var(--size-s);
+            font-weight: var(--weight-xlg);
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            border-radius: 5px;
+            display: flex;
+            gap: var(--span-s);
+            align-items: center;
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &--black {
+            background: #111111;
+            color: var(--white);
+        }
+
+        &--gray {
+            background: #e6e2d9;
+            color: #020000;
+
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
     }
 
     &__menu {
@@ -196,6 +236,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--span-m);
+        padding-right: calc(2 * var(--span-xl));
     }
 
     &__icon {
@@ -232,5 +273,11 @@
         letter-spacing: 0em;
         text-align: left;
         color: var(--black);
+    }
+
+    &__cta {
+        padding-top: calc(2 * var(--span-xl));
+        display: flex;
+        gap: var(--span-s);
     }
 }
