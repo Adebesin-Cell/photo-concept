@@ -1,4 +1,5 @@
 import overlay from './assets/images/overlay.png';
+import avatar from './assets/images/avatar--1.png';
 import { ReactComponent as Logo } from './assets/svgs/logo.svg';
 import { ReactComponent as TrendingLine } from './assets/svgs/icon-trending-lines.svg';
 import { ReactComponent as Airplane } from './assets/svgs/icon-airplane-check.svg';
@@ -185,7 +186,36 @@ function App() {
       </div>
       {/* desktop view ends here */}
       {/* mobile view starts here */}
-      <div className='container'></div>
+      <div className='container'>
+        <header className='header'>
+          <button className='card__button card__button--toggle'>
+            <span className='line'></span>
+            <span className='line'></span>
+            <span className='line'></span>
+          </button>
+          <div className='logo'>
+            <a href='/' className='logo__link' name='logo'>
+              <Logo />
+            </a>
+          </div>
+          <button
+            className='card__button card__button--sign-up card__button--yellow'
+            name='sign up'
+            type='button'
+          >
+            Sign Up
+          </button>
+        </header>
+        <h1 className='heading'>
+          <span>Create your</span>
+          <span className='heading--circled'>beautiful</span>
+          <span className='heading--flex'>
+            photography <span className='heading--small'>&copy;</span>
+          </span>
+          <span>website</span>
+          <img src={avatar} alt='avatar' className='avatar--icon avatar--1' />
+        </h1>
+      </div>
     </>
   );
 }

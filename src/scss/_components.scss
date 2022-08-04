@@ -13,9 +13,15 @@
 
 .container {
     display: none;
+    padding: var(--span-l) calc(var(--span-2xl) + var(--span-2xl));
+    overflow-x: hidden;
 
     @media only screen and (max-width: 990px) {
         display: block;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: var(--span-s) var(--span-s);
     }
 }
 
@@ -206,6 +212,11 @@
             padding: var(--span-xs) var(--span-s);
         }
 
+        &--yellow {
+            background: var(--details-background);
+            color: #111111;
+        }
+
         &--toggle {
             align-self: center;
             width: 24px;
@@ -367,5 +378,87 @@
             text-align: center;
             color: var(--white);
         }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        &__link {
+            svg {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+}
+
+.heading {
+    position: relative;
+    padding-top: var(--span-m);
+    font-family: var(--Poppins);
+    font-size: calc(var(--size-2xl) - 6px);
+    font-weight: var(--weight-lg);
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #161513;
+
+    &--flex {
+        display: flex !important;
+    }
+
+    &--circled {
+        position: relative;
+        z-index: 2;
+
+        &::after {
+            width: 125%;
+            border-radius: 65%;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 60px;
+            border: 5px solid var(--details-background);
+        }
+    }
+
+    &--small {
+        margin-left: 5px;
+        font-size: var(--size-xl);
+    }
+
+    span {
+        text-transform: capitalize;
+        display: block;
+        width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.avatar {
+    &--icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &--1 {
+        top: 80px;
+        position: absolute;
+        right: -40px;
+        z-index: -1;
     }
 }
