@@ -1,5 +1,22 @@
 .wrapper {
     position: relative;
+
+    @media only screen and (min-width: 1800px) {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 990px) {
+        display: none;
+    }
+}
+
+.container {
+    display: none;
+
+    @media only screen and (max-width: 990px) {
+        display: block;
+    }
 }
 
 .overlay {
@@ -43,6 +60,14 @@
     &__content {
         padding-left: calc(2 * var(--span-xl));
         padding-right: calc(5 * var(--span-xl));
+
+        @media only screen and (max-width: 1200px) {
+            padding-left: 0px;
+        }
+
+        @media only screen and (max-width: 1140px) {
+            padding-right: calc(3 * var(--span-xl));
+        }
     }
 
     &__details {
@@ -65,6 +90,10 @@
         padding-top: var(--span-s);
         display: flex;
         gap: var(--span-xl);
+
+        @media only screen and (max-width: 1140px) {
+            padding-top: 0px;
+        }
     }
 
     &__navigation {
@@ -144,6 +173,10 @@
 
     &__line {
         padding-right: calc(2 * var(--span-xl));
+
+        @media only screen and (max-width: 1140px) {
+            padding-right: var(--span-xl);
+        }
     }
 
     &__underline {
@@ -237,6 +270,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: var(--span-m);
         padding-right: calc(2 * var(--span-xl));
+
+        @media only screen and (max-width: 1140px) {
+            padding-right: var(--span-xl);
+        }
     }
 
     &__icon {
