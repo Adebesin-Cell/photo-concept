@@ -280,4 +280,55 @@
         display: flex;
         gap: var(--span-s);
     }
+
+    &__details-footer {
+        padding-top: calc(11 * var(--span-xl));
+    }
+
+    &__illustration {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__scroll {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        overflow-y: hidden;
+    }
+
+    &__scroll-button {
+        cursor: pointer;
+        margin-top: calc(var(--span-xl));
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        border: none;
+        outline: none;
+        background: #111111;
+
+        .icon {
+            margin-top: var(--span-m);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+            display: block;
+            margin-top: 5px;
+            font-family: var(--Poppins);
+            font-size: var(--size-s);
+            font-weight: var(--weight-xlg);
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: var(--white);
+        }
+    }
 }

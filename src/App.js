@@ -2,6 +2,7 @@ import overlay from './assets/images/overlay.png';
 import { ReactComponent as Logo } from './assets/svgs/logo.svg';
 import { ReactComponent as TrendingLine } from './assets/svgs/icon-trending-lines.svg';
 import { ReactComponent as Airplane } from './assets/svgs/icon-airplane-check.svg';
+import illustration from './assets/svgs/illustration-union.svg';
 import './scss/styles.scss';
 
 function App() {
@@ -109,9 +110,9 @@ function App() {
                   viewBox='0 0 24 24'
                   fill='none'
                   stroke='currentColor'
-                  stroke-width='2'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 >
                   <polygon points='5 3 19 12 5 21 5 3'></polygon>
                 </svg>
@@ -135,7 +136,36 @@ function App() {
               </button>
             </div>
           </div>
-          <div className='card__details-footer'>&nbsp;</div>
+          <div className='card__details-footer'>
+            <div className='card__illustration'>
+              <img
+                src={illustration}
+                alt='union'
+                className='card__illustration-image'
+              />
+            </div>
+            <div className='card__scroll'>
+              <button className='card__scroll-button' name='Scroll Down'>
+                <span className='icon'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  >
+                    <line x1='12' y1='5' x2='12' y2='19'></line>
+                    <polyline points='19 12 12 19 5 12'></polyline>
+                  </svg>
+                </span>
+                <span className='text'>Scroll Down</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
