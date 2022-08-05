@@ -93,7 +93,7 @@
     }
 
     &__header {
-        padding-top: var(--span-s);
+        padding-top: calc(var(--span-s) + 5px);
         display: flex;
         gap: var(--span-xl);
 

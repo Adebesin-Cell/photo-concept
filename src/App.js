@@ -1,5 +1,5 @@
 import overlay from './assets/images/overlay.png';
-import avatar from './assets/images/avatar--1.png';
+import avatar from './assets/images/avatar--2.jpg';
 import { ReactComponent as Logo } from './assets/svgs/logo.svg';
 import { ReactComponent as TrendingLine } from './assets/svgs/icon-trending-lines.svg';
 import { ReactComponent as Airplane } from './assets/svgs/icon-airplane-check.svg';
