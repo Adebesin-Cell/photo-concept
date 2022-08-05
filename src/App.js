@@ -1,5 +1,6 @@
 import overlay from './assets/images/overlay.png';
 import avatar from './assets/images/avatar--2.jpg';
+import avatarOne from './assets/images/avatar--4.jpg';
 import { ReactComponent as Logo } from './assets/svgs/logo.svg';
 import { ReactComponent as TrendingLine } from './assets/svgs/icon-trending-lines.svg';
 import { ReactComponent as Airplane } from './assets/svgs/icon-airplane-check.svg';
@@ -212,9 +213,19 @@ function App() {
           <span className='heading--flex'>
             photography <span className='heading--small'>&copy;</span>
           </span>
-          <span>website</span>
+          <span className='heading--underlined'>website</span>
           <img src={avatar} alt='avatar' className='avatar--icon avatar--1' />
+          <img
+            src={avatarOne}
+            alt='avatar'
+            className='avatar--icon avatar--2'
+          />
         </h1>
+        <div className='intro'>
+          <div className='intro__card intro__card--1'>
+            <div className='intro__box'></div>
+          </div>
+        </div>
       </div>
     </>
   );

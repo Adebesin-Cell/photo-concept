@@ -13,6 +13,7 @@
 
 .container {
     display: none;
+    min-height: 100vh;
     padding: var(--span-l) calc(var(--span-2xl) + var(--span-2xl));
     overflow-x: hidden;
 
@@ -406,6 +407,12 @@
     letter-spacing: 0em;
     text-align: center;
     color: #161513;
+    z-index: 2;
+
+    &--underlined {
+        padding-bottom: var(--span-s);
+        border-bottom: 1px solid var(--black);
+    }
 
     &--flex {
         display: flex !important;
@@ -435,6 +442,8 @@
     }
 
     span {
+        position: relative;
+        z-index: 2;
         text-transform: capitalize;
         display: block;
         width: max-content;
@@ -459,6 +468,13 @@
         top: 80px;
         position: absolute;
         right: -40px;
+        z-index: -1;
+    }
+
+    &--2 {
+        bottom: -50px;
+        position: absolute;
+        left: -40px;
         z-index: -1;
     }
 }
