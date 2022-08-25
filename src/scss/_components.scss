@@ -483,7 +483,10 @@
     margin-top: var(--span-m);
     position: relative;
     z-index: 2;
-
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
     &__card {
         display: grid;
@@ -492,10 +495,6 @@
             grid-template-columns: 2fr 0.5fr;
             gap: var(--span-s);
             padding-right: calc(var(--span-2xl) + var(--span-l));
-            max-width: 500px;
-            width: 100%;
-            // margin-left: auto;
-            margin-right: auto;
 
             @media only screen and (max-width: 600px) {
                 padding-right: var(--span-s);
@@ -509,9 +508,6 @@
             grid-template-columns: 0.5fr 2fr;
             gap: var(--span-s);
             padding-left: calc(var(--span-2xl) + var(--span-l));
-            max-width: 500px;
-            width: 100%;
-            margin-left: auto;
 
             @media only screen and (max-width: 600px) {
                 padding-left: var(--span-s);
@@ -581,7 +577,6 @@
         align-items: center;
         min-height: 175px;
         overflow: hidden;
-        cursor: pointer;
 
         .rotate {
             transform: rotate(-90deg);
