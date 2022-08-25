@@ -223,7 +223,72 @@ function App() {
         </h1>
         <div className='intro'>
           <div className='intro__card intro__card--1'>
-            <div className='intro__box'></div>
+            <div className='intro__box intro__box--1'>
+              <div className='intro__icon'>
+                <TrendingLine />
+              </div>
+              <h1 className='intro__title'>Amazing Builder</h1>
+              <p className='intro__text'>
+                Let’s make things easy with our design system.
+              </p>
+            </div>
+            <button
+              className='intro__button intro__button--black'
+              name='Get started'
+            >
+              <span className='icon'>
+                <svg
+                  width='8'
+                  height='14'
+                  viewBox='0 0 8 14'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M5.17198 7L0.221985 2.05L1.63598 0.636002L7.99998 7L1.63598 13.364L0.221985 11.95L5.17198 7Z'
+                    fill='#ffffff'
+                  />
+                </svg>
+              </span>
+              <div className='rotate'>
+                <span className='text'>Get</span>
+                <span className='text'>Started</span>
+              </div>
+            </button>
+          </div>
+          <div className='intro__card intro__card--2'>
+            <button
+              className='intro__button intro__button--grey'
+              name='Watch Demo'
+            >
+              <span className='icon'>
+                <svg
+                  width='8'
+                  height='14'
+                  viewBox='0 0 8 14'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M5.17198 7L0.221985 2.05L1.63598 0.636002L7.99998 7L1.63598 13.364L0.221985 11.95L5.17198 7Z'
+                    fill='#000000'
+                  />
+                </svg>
+              </span>
+              <div className='rotate'>
+                <span className='text'>Watch </span>
+                <span className='text'>Demo</span>
+              </div>
+            </button>
+            <div className='intro__box intro__box--2'>
+              <div className='intro__icon'>
+                <Airplane />
+              </div>
+              <h1 className='intro__title'>Fast and Easy</h1>
+              <p className='intro__text'>
+                We support key shortcut to find the components.
+              </p>
+            </div>
           </div>
         </div>
       </div>
