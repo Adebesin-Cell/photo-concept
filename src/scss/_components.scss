@@ -1,5 +1,6 @@
 .wrapper {
     position: relative;
+    overflow: hidden;
 
     @media only screen and (min-width: 1800px) {
         max-width: 1440px;
@@ -28,9 +29,16 @@
 
 .overlay {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 80px;
+    right: 80px;
     z-index: 1;
+    transform: scale(1.4);
+
+    @media only screen and (max-width: 1200px) {
+        transform: scale(1);
+        top: 0px;
+        right: 0px;
+    }
 
     &__image {
         display: block;
@@ -187,7 +195,7 @@
     }
 
     &__line {
-        padding-right: calc(2 * var(--span-xl));
+        // padding-right: calc(2 * var(--span-xl));
 
         @media only screen and (max-width: 1140px) {
             padding-right: var(--span-xl);
@@ -289,7 +297,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--span-m);
-        padding-right: calc(2 * var(--span-xl));
+        // padding-right: calc(2 * var(--span-xl));
 
         @media only screen and (max-width: 1140px) {
             padding-right: var(--span-xl);
